@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./telaLogin.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#1B1798',
+                    },
+                    spacing: {
+                        imgg: '450px',
+                        capa: '230px',
+                        card: "200px",
+                        body: '100vh'
+
+                    },
+                    zIndex: {
+                        img: '-1',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Zen-AI</title>
+</head>
+<body class="bg-gradient-to-l from-indigo-900 to-black h-screen">
+
+    <header></header>
+    <main>
+
+        <!-- Retangulo onde guarda o Login -->
+        <div class="pt-[250px] pl-[36%]">
+            <div class="fixed bg-[#08072E] w-[50px] h-[400px] z-[1] drop-shadow-xl"></div>
+        <div class="fixed bg-white w-[500px] h-[400px] rounded-[15px] drop-shadow-md"></div>
+        </div>
+
+        <!-- Texto com movimento "Zen-Ai" -->
+        <div class="container"></div>
+        <div class="glitch-wrapper">
+            <div class="glitch" data-text="ZEN-AI">ZEN-AI</div>
+         </div>
+
+
+         <div class="flex justify-center items-center h-screen"></div>
+         <div class="mb-4"></div>
+            <label class="fixed text-gray-700 text-sm font-bold mb-2 z-[2]" for="username">
+                Username
+            </label>
+            <input class=" fixed shadow appearance-none border rounded w-[300px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+        </div>
+
+        <div class="mb-6">
+            <label class="fixed text-gray-700 text-sm font-bold mb-2" for="password">
+                Password
+            </label>
+            <input class="fixed shadow appearance-none border rounded w-[300px] py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+        </div>
+    </div>
+
+
+
+
+
+        
+
+    </main>
+
+
+    <footer>
+
+        
+
+    </footer>
+    
+</body>
+</html>

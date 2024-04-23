@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Libre+Barcode+39+Text&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./telaInicial.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#1B1798',
+                    },
+                    spacing: {
+                        imgg: '450px',
+                        capa: '230px',
+                        card: "200px",
+                        body: '100vh'
+
+                    },
+                    zIndex: {
+                        img: '-1',
+                    }
+                },
+                fontFamily: {
+                    'sans': ['Krona One', 'sans-serif']
+                }
+            }
+        }
+    </script>
+    <title>Zen-AI</title>
+</head>
+
+<body class="bg-gradient-to-r from-indigo-900 to-black h-screen ">
+
+    <header>
+
+           <!-- Botão para vpltar para tela anterior -->
+           <div class="fixed left-[50px] top-[40px] z-[2]">
+            <a href="./telaLogin.html">
+                <img class="w-[30px]" src="../img/seta.png" alt="voltar">
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- Texto "Zen-Ai" -->
+        <h1 class=" fixed pt-[90px] pl-[220px]  z-[1] font-sans text-[28px]">
+            Zen-Ai
+        </h1>
+
+        <!-- Quadradao de desing que guarda tudo -->
+        <div class="pt-[70px] pl-[190px]">
+            <div class="fixed bg-white w-[1543px] h-[770px] rounded-r-lg drop-shadow-md"></div>
+
+
+        <!-- Input que recebe as perguntas do ususario -->
+            <div class="pt-[685px] pl-[70px]">
+                <input type="text" id="texto" name="texto" placeholder="Digite sua mensagem..."
+                    class="fixed mt-1 p-2 border bg-gray border-gray-300 rounded-md w-[1330px] z-[6]">
+            </div>
+
+            <div class="fixed pl-[1407px]">
+                <img class="w-[40px]" src="../img/enviar.png" alt="">
+            </div>
+            
+
+        </div>
+
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>

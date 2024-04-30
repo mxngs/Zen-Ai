@@ -1,5 +1,7 @@
 .container{
     height: 18px;
+    top: -10px;
+    position: fixed;
 }
 
 .glitch-wrapper {

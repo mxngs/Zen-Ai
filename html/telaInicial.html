@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Libre+Barcode+39+Text&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./telaInicial.css">
+    <link rel="stylesheet" href="../css/telaInicial.css">
+    <script src="../js/script.js" type="module" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -64,14 +65,28 @@
 
         <!-- Input que recebe as perguntas do ususario -->
             <div class="pt-[685px] pl-[70px]">
-                <input type="text" id="texto" name="texto" placeholder="Digite sua mensagem..."
+                <input type="text" id="ask--user" name="texto" placeholder="Digite sua mensagem..."
                     class="fixed mt-1 p-2 border bg-gray border-gray-300 rounded-md w-[1330px] z-[6]">
             </div>
 
             <div class="fixed pl-[1407px]">
-                <img class="w-[40px]" src="../img/enviar.png" alt="">
+                <button class="w-[40px]" id="send--question" >
+                    <img src="../img/enviar.png" alt="">
+                </button>
+
+                </button>
             </div>
             
+            <!-- answer-pt -->
+
+            <div class="fixed left-[54%] top-[200px] rounded-[50px] z-[7] bg-[#EEEEF0] w-[500px] h-[500px]">
+                <textarea class="fixed bg-[#EEEEF0] w-[450px] top-[220px] left-[55%] z-[8]" name="" id="answer-en" cols="30" rows="10" ></textarea>
+            </div>
+            
+            
+            <div class="fixed left-[20%] top-[200px] rounded-[50px] z-[8] bg-[#EEEEF0] w-[500px] h-[500px]">
+                <textarea class="bg-[#EEEEF0] w-[450px] top-[210px] left-[396px] z-[8]" name="" id="answer-pt" cols="30" rows="10" ></textarea>
+            </div>
 
         </div>
 
